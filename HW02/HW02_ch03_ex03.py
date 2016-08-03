@@ -33,14 +33,51 @@
 # A print statement with no argument ends the current line and 
 # goes to the next line.
 
+def print_func1():
+    print ('+','- '*4 +'+','- '*4 +'+')
+
+def print_func2():
+    print ('|',' '*8+'|',' '*8+'|')
+
+def print_box():
+    print_func1()
+    print_func2()
+    print_func2()
+    print_func2()
+    print_func2()
+    
+def print_func():
+    print_box()
+    print_box()
+    print_func1()
+    
 
 
 # (2) Write a function that draws a similar grid with four rows and four columns.
 ################################################################################
 # Write your functions below:
 # Body
+def print_func12():
+    print ('+','- '*4+'+','- '*4+'+',end=' ')
+    print ('- '*4+'+','- '*4+'+')
 
-
+def print_func22():
+    print ('|',' '*8+'|',' '*8+'|',end=' ')
+    print (' '*8+'|',' '*8+'|')
+    
+def print_func_box():
+    print_func12()
+    print_func22()
+    print_func22()
+    print_func22()
+    print_func22()
+    
+def print_func_four():
+    print_func_box()
+    print_func_box()
+    print_func_box()
+    print_func_box()
+    print_func12()
 
 
 
@@ -60,6 +97,8 @@ def main():
     four_by_four()
     """
     print("Hello World!")
+    print_func()
+    print_func_four()
     
 
 
